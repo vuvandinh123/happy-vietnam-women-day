@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng 20/10 - Moon Group</title>
+    <meta name="title" content="🌸 Lời Chúc 20/10 Đến Các Chị Em Moon Group 🌙">
+    <meta name="description"
+        content="Lời chúc tốt đẹp nhất đến phái đẹp trong ngày 20/10 — chúc mọi người luôn rạng rỡ, hạnh phúc và tràn đầy năng lượng! 💐">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="🌸  Lời Chúc 20/10 Đến Các Chị Em Moon Group 🌙">
+    <meta property="og:description"
+        content="Lời chúc tốt đẹp nhất đến phái đẹp trong ngày 20/10 — chúc mọi người luôn rạng rỡ, hạnh phúc và tràn đầy năng lượng! 💐">
+    <meta property="og:image" content="./image.png">
+    <meta property="og:url" content="https://yourdomain.com/20-10">
+    <meta property="og:site_name" content="Moon Group">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="🌸  Lời Chúc 20/10 Đến Các Chị Em Moon Group 🌙">
+    <meta name="twitter:description"
+        content="Lời chúc tốt đẹp nhất đến phái đẹp trong ngày 20/10 — chúc mọi người luôn rạng rỡ, hạnh phúc và tràn đầy năng lượng! 💐">
+    <meta name="twitter:image" content="./image.png">
+
+    <meta name="robots" content="noindex, nofollow">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Three.js Canvas -->
+    <div id="canvas-container"></div>
+
+    <!-- Shooting Stars -->
+    <div id="shooting-stars"></div>
+
+    <div class="content min-h-screen">
+        <div class="container mx-auto px-4 py-12">
+            <!-- Header -->
+            <div class="text-center mb-16 animate__animated animate__fadeInDown">
+                <h1 class="text-6xl md:text-8xl font-bold text-moon title-font mb-4 sparkle-text">
+                    Chúc Mừng 20/10
+                </h1>
+                <div
+                    class="text-3xl md:text-4xl script-font text-gold mb-6 animate__animated animate__fadeIn animate__delay-1s">
+                    Ngày Phụ Nữ Việt Nam
+                </div>
+                <div
+                    class="inline-block card-glass rounded-full px-8 py-3 moon-glow animate__animated animate__fadeIn animate__delay-2s">
+                    <p class="text-moon text-xl font-semibold">🌙 Moon Group 🌙</p>
+                </div>
+            </div>
+
+            <!-- Name Input Section -->
+            <div class="max-w-md mx-auto mb-12 animate__animated animate__zoomIn">
+                <div class="card-glass rounded-2xl p-8 moon-glow parallax-card">
+                    <h3 class="text-2xl font-bold text-center mb-4 text-moon title-font">
+                        Nhận Lời Chúc Của Bạn
+                    </h3>
+                    <p class="text-center text-gray-300 mb-6">
+                        Nhập tên của bạn để nhận lời chúc đặc biệt ✨
+                    </p>
+                    <input type="text" id="nameInput" placeholder="Nhập tên của bạn..."
+                        class="name-input w-full px-4 py-3 rounded-lg mb-4 text-center text-lg">
+                    <button onclick="showWish()" class="btn-moon w-full py-3 rounded-lg font-bold text-lg">
+                        Nhận Lời Chúc 🌟
+                    </button>
+                </div>
+            </div>
+
+            <div id="wishDisplay" class="max-w-4xl mx-auto mb-16 hidden">
+                <div class="card-glass rounded-3xl p-8 md:p-12 card-hover moon-glow wish-card parallax-card">
+                    <div class="text-center mb-8">
+                        <span class="text-6xl float inline-block">💐</span>
+                    </div>
+
+                    <h2 id="wishTitle" class="text-3xl md:text-4xl font-bold text-center mb-6 text-gold title-font">
+                    </h2>
+
+                    <div id="wishContent" class="space-y-4 text-gray-200 text-lg leading-relaxed">
+                    </div>
+
+                    <div class="text-center mt-8">
+                        <button onclick="reset()" class="btn-moon px-8 py-3 rounded-lg font-bold">
+                            Xem Lời Chúc Khác 🔄
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
+                <div
+                    class="card-glass flex flex-col items-center rounded-2xl p-8 card-hover float animate__animated animate__fadeInLeft parallax-card">
+                    <div class="feature-icon mb-4 text-center">🌸</div>
+                    <h3 class="text-2xl font-bold text-gold mb-3 title-font text-center">Rạng Rỡ</h3>
+                    <p class="text-gray-300 text-center">
+                        Như ánh trăng sáng, các chị em luôn toả sáng và dẫn lối cho mọi người
+                    </p>
+                </div>
+
+                <div class="card-glass flex flex-col items-center rounded-2xl p-8 card-hover float animate__animated animate__fadeInUp animate__delay-1s parallax-card"
+                    style="animation-delay: 0.2s">
+                    <div class="feature-icon mb-4 text-center">💫</div>
+                    <h3 class="text-2xl font-bold text-moon mb-3 title-font text-center">Tỏa Sáng</h3>
+                    <p class="text-gray-300 text-center">
+                        Mỗi người là một vì sao, cùng nhau tạo nên bầu trời Moon Group rực rỡ
+                    </p>
+                </div>
+
+                <div class="card-glass flex flex-col items-center rounded-2xl p-8 card-hover float animate__animated animate__fadeInRight animate__delay-2s parallax-card"
+                    style="animation-delay: 0.4s">
+                    <div class="feature-icon mb-4 text-center">🌙</div>
+                    <h3 class="text-2xl font-bold text-gold mb-3 title-font text-center">Lung Linh</h3>
+                    <p class="text-gray-300 text-center">
+                        Tài năng và tận tâm, các chị em là ánh trăng soi đường cho công ty
+                    </p>
+                </div>
+            </div>
+
+            <div class="text-center animate__animated animate__fadeInUp">
+                <div class="inline-block card-glass rounded-2xl px-10 py-6 moon-glow parallax-card">
+                    <p class="text-moon text-2xl font-semibold script-font">
+                        Happy Women's Day! 🎉
+                    </p>
+                    <p class="text-gray-400 mt-2">
+                        20/10/2025
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
